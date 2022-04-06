@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+</head>
+<body>
+{% extends 'library/base.html' %}
+{% block content %}
+<p>Witam na mojej stronie! Najbliższe aktualizacje:</p>
+<ul>
+    {% for x in text %}
+    <li>{{ x }}</li>
+    {% empty %}
+    <li>Brak aktualizacji</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
+</body>
+</html>

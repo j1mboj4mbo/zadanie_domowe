@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pasek</title>
+</head>
+<body>
+<p>
+<a href="{% url 'library:index' %}">STRONA GŁÓWNA</a> ---
+<a href="{% url 'library:time' %}">SPRAWDŹ AKTUALNĄ DATĘ I GODZINĘ</a> ---
+<a href="{% url 'library:browser' %}">SPRAWDŹ SWOJĄ PRZEGLĄDARKE</a>
+</p>
+{% block content %}{% endblock content %}
+</body>
+</html>
