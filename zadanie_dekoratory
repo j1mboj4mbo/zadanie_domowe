@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@j1mboj4mbo 
-j1mboj4mbo
-/
-learning
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-learning/kgawda/zadanie_dekoratory
-@j1mboj4mbo
-j1mboj4mbo Create zadanie_dekoratory
-Latest commit 9d85686 2 hours ago
- History
- 1 contributor
-82 lines (67 sloc)  2.33 KB
-   
 import time
 
 def main():
