@@ -1,0 +1,1 @@
+Artur Janduda to ja
