@@ -1,12 +1,12 @@
+{% extends 'library/base.html' %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Strona główna</title>
+    <title>{% block title %}Strona główna{% endblock title %}</title>
 </head>
 <body>
-{% extends 'library/base.html' %}
-{% block content %}
 <p>Witam na mojej stronie! Najbliższe aktualizacje:</p>
 <ul>
     {% for x in text %}
@@ -15,6 +15,16 @@
     <li>Brak aktualizacji</li>
     {% endfor %}
 </ul>
+{% if books %}
+<b>Książki:</b>
+<ul>
+    {% for book in books %}
+      <li><a href="{% url 'library:book' book.id %}">{{ book }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+    Brak książek
+{% endif %}
 {% endblock content %}
 </body>
 </html>

@@ -1,0 +1,21 @@
+{% extends 'library/base.html' %}
+{% block title %}{{ book.title }}{% endblock title %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<b>Książka:</b><p>{{ book.title }}</p>
+<b>Opis:</b>
+<p>{{ book.description }}</p>
+<b>Autor:</b>
+<p>
+    <a href="{% url 'library:author' book.author.id %}">{{ book.author }}</a>
+</p>
+
+{% endblock content %}
+</body>
+</html>
